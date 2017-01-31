@@ -273,9 +273,32 @@ $&gt; ./liquigraph.sh --changelog "${your_project}/migrations/changelog.xml" \
 
         <section id="detailed_section">
           <h1>Detailed section</h1>
+            <h2>Supported JDBC urls</h2>
+            <dl>
+                <dt>http</dt>
+                <dd>
+                    <p>
+                    The URL pattern is: <code>jdbc:neo4j:http://&lt;host&gt;:&lt;port&gt;/</code>
+                    </p>
+                    <p>For instance: jdbc:neo4j:http://localhost:7474</p>
+                </dd>
+                <dt>https</dt>
+                <dd>
+                    <p>
+                    The URL pattern is: <code>jdbc:neo4j:https://&lt;host&gt;:&lt;port&gt;/</code>
+                    </p>
+                    <p>For instance: jdbc:neo4j:https://localhost:7474</p>
+                </dd>
+                <dt>Bolt</dt>
+                <dd>
+                    <p>
+                    The URL pattern is: <code>jdbc:neo4j:bolt://&lt;host&gt;:&lt;port&gt;/</code>
+                    </p>
+                    <p>For instance: jdbc:neo4j:bolt://localhost:7687</p>
+                </dd>
+            </dl>
           <h2>Definitions</h2>
           <dl>
-
             <dt>Changelog</dt>
             <dd>
               <p>
