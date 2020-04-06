@@ -403,6 +403,7 @@ $&gt; ./liquigraph.sh --changelog "${your_project}/migrations/changelog.xml" \
               <pre><code class="xml">&lt;changeset id=&quot;hello-world&quot; author=&quot;you&quot; run-always=&quot;true&quot;&gt;
    &lt;query&gt;CREATE (n:Sentence {text:&#39;Hello monde!&#39;}) RETURN n&lt;/query&gt;
 &lt;/changeset&gt;</code></pre>
+<p>Changesets that need to change and be run all the time need to set both run-always and run-on-change to true</p>
             </dd>
 
             <dt>Changeset precondition</dt>
