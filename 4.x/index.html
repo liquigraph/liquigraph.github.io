@@ -317,7 +317,7 @@ $&gt; ./liquigraph.sh --changelog "${your_project}/migrations/changelog.xml" \
             <dt>Changelog</dt>
             <dd>
               <p>
-                A Liquigraph changelog defines a set of migrations to be performed. There can be
+                A Liquigraph changelog defines a set of migrations (changesets) to be performed. There can be
                 only one changelog as entry point per project.
               </p>
               <pre><code class="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
@@ -384,31 +384,45 @@ $&gt; ./liquigraph.sh --changelog "${your_project}/migrations/changelog.xml" \
               <p>
                 As previously mentioned, Liquigraph changesets are immutable by default (an error
                 will be thrown if they have been altered). That said, there may be situations where
-                changesets should be run whenever their contents have changed. To achieve this, you
-                just need to define one extra attribute:
-              </p>
+                changesets should be run whenever their contents have changed. 
+                When a change occurs, the changeset computed checksum will change and Liquigraph will execute the changeeset queries.<p>
+              <p>To allow such a scenario, you just need to add an extra attribute to the changeset element:</p>
               <pre><code class="xml">&lt;changeset id=&quot;hello-world&quot; author=&quot;you&quot; run-on-change=&quot;true&quot;&gt;
    &lt;query&gt;CREATE (n:Sentence {text:&#39;Hello monde!&#39;}) RETURN n&lt;/query&gt;
 &lt;/changeset&gt;</code></pre>
             </dd>
+            <p>
+            </p>
 
             <dt>Changeset incrementality</dt>
             <dd>
               <p>
-                As previously mentioned, Liquigraph changesets are incremental by default (they will
-                be executed only once). That said, there may be situations where changesets should
-                be run at every execution. To achieve this, you just need to define one extra
+                Liquigraph changesets are incremental by default (they will be executed only once). That said, there may be situations where changesets should be run at every execution. To achieve this, you just need to define one extra
                 attribute:
               </p>
               <pre><code class="xml">&lt;changeset id=&quot;hello-world&quot; author=&quot;you&quot; run-always=&quot;true&quot;&gt;
    &lt;query&gt;CREATE (n:Sentence {text:&#39;Hello monde!&#39;}) RETURN n&lt;/query&gt;
 &lt;/changeset&gt;</code></pre>
+
+            </dd>
+
+            <dt>Combining mutability and non-incrementality</dt>
+            <dd>
+              <p>
+                A mutable changeset (<code>run-on-change=true</code>) is not going to run unless its content change.<br/>
+                Similarly, a non-incremental changeset (<code>run-always="true"</code>) will always run as long as it never changes (else an error would occur, changesets are immutable by default).<br/>
+                If you need to run a changeset all the time and allow its content to change, then you need to combine both attributes.
+              </p>
+              <pre><code class="xml">&lt;changeset id=&quot;hello-world&quot; author=&quot;you&quot; run-always=&quot;true&quot;  run-on-change=&quot;true&quot;&gt;
+   &lt;query&gt;CREATE (n:Sentence {text:&#39;Hello monde!&#39;}) RETURN n&lt;/query&gt;
+&lt;/changeset&gt;</code></pre>
+
             </dd>
 
             <dt>Changeset precondition</dt>
             <dd>
               <p>
-                Changeset preconditions act like guards. They make sure that the changeset query
+                Changeset preconditions act like guards. They make sure that the changeset queries
                 will be executed if and only if the precondition is met.
               </p>
               <p>
@@ -462,7 +476,7 @@ $&gt; ./liquigraph.sh --changelog "${your_project}/migrations/changelog.xml" \
             <dd>
               <p>
                 Changeset postconditions allow a single changeset to be applied as many times as
-                necessary to complete the migration, by repeating the changeset as long as the
+                necessary to complete the migration, by repeating the changeset queries as long as the
                 postcondition is met.
               </p>
               <p>

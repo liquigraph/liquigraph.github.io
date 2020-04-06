@@ -58,7 +58,6 @@
     &lt;/changeset&gt;
 &lt;/changelog&gt;</code></pre>
           </div>
-
           <div>
             <p>
               These migrations can be run using the <a href="#core">Java API</a> directly,
@@ -79,6 +78,22 @@
     &lt;artifactId&gt;liquigraph-core&lt;/artifactId&gt;
     &lt;version&gt;3.1.2&lt;/version&gt;
 &lt;/dependency&gt;</code></pre>
+
+            <p id="snapshot_warning">If you want to consume a SNAPSHOT version, you need to add the following to your POM:</p>
+            <pre><code class="xml">&lt;repositories&gt;
+  &lt;repository&gt;
+      &lt;id&gt;ossrh&lt;/id&gt;
+      &lt;name&gt;Sonatype Snapshots&lt;/name&gt;
+      &lt;url&gt;https://oss.sonatype.org/content/repositories/snapshots&lt;/url&gt;
+      &lt;snapshots&gt;
+          &lt;enabled&gt;true&lt;/enabled&gt;
+      &lt;/snapshots&gt;
+      &lt;releases&gt;
+          &lt;enabled&gt;false&lt;/enabled&gt;
+      &lt;/releases&gt;
+  &lt;/repository&gt;
+&lt;/repositories&gt;</code></pre>
+
               <p>Finally, running the migrations can be done as follows:</p>
               <pre><code class="java">import org.liquigraph.core.api.Liquigraph;
 import org.liquigraph.core.configuration.Configuration;
@@ -108,7 +123,7 @@ liquigraph.runMigrations(configuration);</code></pre>
                 <li>
                   <p>
                     Include Liquigraph Spring Boot starter in your
-                    <span class="path">pom.xml</span>:
+                    <span class="path">pom.xml</span> (see <a href="#snapshot_warning">instructions</a> to consume the SNAPSHOT version):
                   </p>
                   <pre><code class="xml">&lt;dependency&gt;
     &lt;groupId&gt;org.liquigraph&lt;/groupId&gt;
@@ -199,7 +214,7 @@ public class DataSourceConfiguration {
                 Save the migration file at
                 <span class='path'>${your_project}/src/main/resources/changelog.xml</span>.
               </p>
-              <p>Then, include Liquigraph plugin in your <span class="path">pom.xml</span>:
+              <p>Then, include Liquigraph plugin in your <span class="path">pom.xml</span> (see <a href="#snapshot_warning">instructions</a> to consume the SNAPSHOT version):
               <pre><code class="xml">&lt;plugin&gt;
     &lt;groupId&gt;org.liquigraph&lt;/groupId&gt;
     &lt;artifactId&gt;liquigraph-maven-plugin&lt;/artifactId&gt;
@@ -302,7 +317,7 @@ $&gt; ./liquigraph.sh --changelog "${your_project}/migrations/changelog.xml" \
             <dt>Changelog</dt>
             <dd>
               <p>
-                A Liquigraph changelog defines a set of migrations to be performed. There can be
+                A Liquigraph changelog defines a set of migrations (changesets) to be performed. There can be
                 only one changelog as entry point per project.
               </p>
               <pre><code class="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
@@ -369,31 +384,45 @@ $&gt; ./liquigraph.sh --changelog "${your_project}/migrations/changelog.xml" \
               <p>
                 As previously mentioned, Liquigraph changesets are immutable by default (an error
                 will be thrown if they have been altered). That said, there may be situations where
-                changesets should be run whenever their contents have changed. To achieve this, you
-                just need to define one extra attribute:
-              </p>
+                changesets should be run whenever their contents have changed. 
+                When a change occurs, the changeset computed checksum will change and Liquigraph will execute the changeeset queries.<p>
+              <p>To allow such a scenario, you just need to add an extra attribute to the changeset element:</p>
               <pre><code class="xml">&lt;changeset id=&quot;hello-world&quot; author=&quot;you&quot; run-on-change=&quot;true&quot;&gt;
    &lt;query&gt;CREATE (n:Sentence {text:&#39;Hello monde!&#39;}) RETURN n&lt;/query&gt;
 &lt;/changeset&gt;</code></pre>
             </dd>
+            <p>
+            </p>
 
             <dt>Changeset incrementality</dt>
             <dd>
               <p>
-                As previously mentioned, Liquigraph changesets are incremental by default (they will
-                be executed only once). That said, there may be situations where changesets should
-                be run at every execution. To achieve this, you just need to define one extra
+                Liquigraph changesets are incremental by default (they will be executed only once). That said, there may be situations where changesets should be run at every execution. To achieve this, you just need to define one extra
                 attribute:
               </p>
               <pre><code class="xml">&lt;changeset id=&quot;hello-world&quot; author=&quot;you&quot; run-always=&quot;true&quot;&gt;
    &lt;query&gt;CREATE (n:Sentence {text:&#39;Hello monde!&#39;}) RETURN n&lt;/query&gt;
 &lt;/changeset&gt;</code></pre>
+
+            </dd>
+
+            <dt>Combining mutability and non-incrementality</dt>
+            <dd>
+              <p>
+                A mutable changeset (<code>run-on-change=true</code>) is not going to run unless its content change.<br/>
+                Similarly, a non-incremental changeset (<code>run-always="true"</code>) will always run as long as it never changes (else an error would occur, changesets are immutable by default).<br/>
+                If you need to run a changeset all the time and allow its content to change, then you need to combine both attributes.
+              </p>
+              <pre><code class="xml">&lt;changeset id=&quot;hello-world&quot; author=&quot;you&quot; run-always=&quot;true&quot;  run-on-change=&quot;true&quot;&gt;
+   &lt;query&gt;CREATE (n:Sentence {text:&#39;Hello monde!&#39;}) RETURN n&lt;/query&gt;
+&lt;/changeset&gt;</code></pre>
+
             </dd>
 
             <dt>Changeset precondition</dt>
             <dd>
               <p>
-                Changeset preconditions act like guards. They make sure that the changeset query
+                Changeset preconditions act like guards. They make sure that the changeset queries
                 will be executed if and only if the precondition is met.
               </p>
               <p>
@@ -447,7 +476,7 @@ $&gt; ./liquigraph.sh --changelog "${your_project}/migrations/changelog.xml" \
             <dd>
               <p>
                 Changeset postconditions allow a single changeset to be applied as many times as
-                necessary to complete the migration, by repeating the changeset as long as the
+                necessary to complete the migration, by repeating the changeset queries as long as the
                 postcondition is met.
               </p>
               <p>
