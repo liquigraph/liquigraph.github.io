@@ -203,6 +203,14 @@ That said, there may be situations where changesets should be run at every execu
    &lt;query&gt;CREATE (n:Sentence {text:&#39;Hello monde!&#39;}) RETURN n&lt;/query&gt;
 &lt;/changeset&gt;</code></pre></dd>
 
+			<dt>Changeset Run Always + Run on Change</dt>
+			<dd><p>	There may be situations where changesets should be run at every execution 
+				and should be run whenever their contents have changed as well.
+				To achieve this, you just need to define both run-always and run-on-change attributes:</p>
+			<pre><code class="xml">&lt;changeset id=&quot;hello-world&quot; author=&quot;you&quot; run-always=&quot;true&quot; run-on-change=&quot;true&quot;&gt;
+   &lt;query&gt;CREATE (n:Sentence {text:&#39;Hello monde!&#39;}) RETURN n&lt;/query&gt;
+&lt;/changeset&gt;</code></pre></dd>
+
 			<dt>Changeset precondition</dt>
 			<dd><p>Changeset preconditions act like guards. They make sure that the changeset query will be executed if and only if the precondition is met.</p>
 <p>A precondition can be simple (1 <a href="http://neo4j.com/developer/cypher-query-language/">Cypher</a> query) or compound (with boolean AND/OR operators).</p>

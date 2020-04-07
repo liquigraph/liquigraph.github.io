@@ -390,6 +390,19 @@ $&gt; ./liquigraph.sh --changelog "${your_project}/migrations/changelog.xml" \
 &lt;/changeset&gt;</code></pre>
             </dd>
 
+            <dt>Changeset Run Always + Run on Change</dt>
+            <dd>
+              <p>
+                There may be situations where changesets should be run at every execution 
+                and should be run whenever their contents have changed as well.
+                To achieve this, you just need to define both run-always and run-on-change attributes:
+              </p>
+              <pre><code class="xml">&lt;changeset id=&quot;hello-world&quot; author=&quot;you&quot; run-always=&quot;true&quot;  run-on-change=&quot;true&quot;&gt;
+   &lt;query&gt;CREATE (n:Sentence {text:&#39;Hello monde!&#39;}) RETURN n&lt;/query&gt;
+&lt;/changeset&gt;</code></pre>
+
+            </dd>
+
             <dt>Changeset precondition</dt>
             <dd>
               <p>
