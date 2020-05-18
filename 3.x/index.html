@@ -43,9 +43,25 @@
           <h1>5-minute guide</h1>
 
           <div>
+            <h2>Crash Course</h2>
+            <p>
+              Liquigraph executes migrations defined in a single <em>changelog</em>.
+              These migrations are actually called <em>changesets</em>.
+            </p>
+            <p>
+              Each changeset must define at least 1 migration query in the <a href="https://en.wikipedia.org/wiki/Cypher_(query_language)" rel="noopener" target="_blank">Cypher query language</a>.
+            </p>
+            <p>
+              Changesets are immutable (i.e. not allowed to change) and incremental (i.e. executed only once) by default. Liquigraph persists the executed changesets in the target graph database every time it runs.
+            </p>
+            <p>
+              See the <a href="#detailed_section">detailed section</a> to understand the Liquigraph model in more details.
+            </p>
+          </div>
+          <div>
             <h2>The Migration File</h2>
             <p>
-              Open your favourite editor and define two migrations (a.k.a. changesets) as follows:
+              Open your favourite editor and define a changelog with two changesets as follows:
             </p>
             <pre><code class="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;changelog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
