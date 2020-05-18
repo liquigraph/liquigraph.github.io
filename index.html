@@ -28,19 +28,19 @@
         
         <section>
           <h1>Liquigraph is a database refactoring tool</h1>
-          <p>It helps you maintain your <a href="https://neo4j.com/">Neo4j</a> database state by defining and executing migrations in a variety of ways.
-            This project is heavily inspired from <a href="http://www.liquibase.org/">Liquibase</a>.
+          <p>It helps you maintain your <a href="https://neo4j.com/" rel="noopener" target="_blank">Neo4j</a> database state by defining and executing migrations.</p> 
+          <p>This project is heavily inspired from <a href="http://www.liquibase.org/" rel="noopener" target="_blank">Liquibase</a>.
           </p>
+          <p>Select the appropriate version in the footer to access the guide and detailed documentation.</p>
         </section>
         
         <hr/>
 
         <section>
-          <h2>What version should I use? <a class="tldr" href="#versioning">tl;dr</a></h2>
-          <p>Liquigraph started when the first versions of Neo4j 2.0 were released. The project was still going towards 1.0 and release candidates were pushed.
-
-          Time has passed, several major versions have been released and a new JDBC driver, for Neo4j 3.x, has been designed. This new JDBC driver is not feature-complete yet and cannot replace entirely the legacy JDBC driver (see <a href="https://github.com/liquigraph/neo4j-jdbc-2x#legacy-vs-current-neo4j-jdbc-driver-matrix">this usecase matrix</a> for more details).
-          </p>
+          <h2>What version of Liquigraph should I use? <a class="tldr" href="#versioning">tl;dr</a></h2>
+          <p>Liquigraph 1.x has never been generally available and release candidates should not be used.</p>
+          <p>If you are still using Neo4j 2.x, please use Liquigraph 2.x (which uses a fork of the legacy JDBC driver). Note that some of its third-party dependencies cannot be upgraded due to conflicting JDK requirements and may cause security issues.</p>
+          <p>For Neo4j 3.x and 4.x respectively, please use Liquigraph 3.x and 4.x.</p> 
 
           <p>See in the <a href="#versioning">table below</a> to pick the right Liquigraph version for your usecase.</p>
 
@@ -62,22 +62,22 @@
             <tr>
               <td>2.x</td>
               <td>2.x</td>
-              <td><a href="https://github.com/liquigraph/neo4j-jdbc-2x">Legacy JDBC Driver (fork)</a></td>
+              <td><a href="https://github.com/liquigraph/neo4j-jdbc-2x" rel="noopener" target="_blank">Legacy JDBC Driver (fork)</a></td>
               <td>Embedded (2.x), HTTP (2.x)</td>
               <td>JRE 7</td>
             </tr>
             <tr>
               <td>3.x</td>
               <td>3.x</td>
-              <td><a href="https://github.com/neo4j-contrib/neo4j-jdbc">Official JDBC Driver</a></td>
-              <td>HTTP (3.x), Bolt (3.x)</td>
+              <td><a href="https://github.com/neo4j-contrib/neo4j-jdbc" rel="noopener" target="_blank">Official JDBC Driver</a></td>
+              <td>HTTP (3.x), Bolt (3.x), Bolt+Routing (3.x)</td>
               <td>JRE 8</td>
             </tr>
             <tr>
               <td>4.x</td>
               <td>4.x</td>
-              <td><a href="https://github.com/neo4j-contrib/neo4j-jdbc">Official JDBC Driver</a></td>
-              <td>HTTP (4.x), Bolt (4.x)</td>
+              <td><a href="https://github.com/neo4j-contrib/neo4j-jdbc" rel="noopener" target="_blank">Official JDBC Driver</a></td>
+              <td>HTTP (4.x), Bolt (4.x), Bolt+Routing (4.x)</td>
               <td>JRE 11</td>
             </tr>
           </table>
@@ -85,7 +85,7 @@
         
         <div id="versions">
           <hr />
-          <h2>Detailed documentation</h2>
+          <h2>Quickstart Guide & Detailed documentation</h2>
           <ul>
             <li><a href="./1.0-RC1/index.html">1.0-RC1</a></li>
             <li><a href="./1.0-RC2/index.html">1.0-RC2</a></li>
@@ -94,7 +94,7 @@
             <li><a href="./3.x/index.html">3.x</a></li>
             <li><a href="./4.x/index.html">4.x</a></li>
           </ul>
-          <footer><p>Liquigraph is maintained by <a href="https://github.com/fbiville">Florent Biville</a> and several <a href="https://github.com/liquigraph/liquigraph/graphs/contributors">others</a> &middot; Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p></footer>
+          <footer><p>Liquigraph is maintained by <a href="https://github.com/fbiville" rel="noopener" target="_blank">Florent Biville</a> and several <a href="https://github.com/liquigraph/liquigraph/graphs/contributors">others</a> &middot; Tactile theme by <a href="https://twitter.com/jasonlong" rel="noopener" target="_blank">Jason Long</a>.</p></footer>
         </div>
 
       </div>
