@@ -1,0 +1,243 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1567" height="1264"
+     viewbox="0 0 1567 1264">
+    <path transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-223.5 -246) rotate(-61.34988115030916)"
+          d="M 99 0 L 474.76212436637616 0" fill="none" stroke="#000000" stroke-width="5"></path>
+    <polygon
+            transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-223.5 -246) rotate(-61.34988115030916) translate(499.62427498412444 0) rotate(0)"
+            points="-24.8621506177483,0 -27.62461179749811,9.20820393249937 0,0 -27.62461179749811,-9.20820393249937"
+            fill="undefined" stroke="none" stroke-width="5"></polygon>
+    <rect transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-85.95209755433538 -497.75646639590445) rotate(-61.34988115030916) translate(0 -27) translate(-170.01666259765625 0)"
+          x="0" y="0" width="340.0333251953125" height="30" rx="5" ry="5" fill="#ffffff" stroke="none"></rect>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-85.95209755433538 -497.75646639590445) rotate(-61.34988115030916) translate(0 -27) translate(-170.01666259765625 0)"
+          x="5" y="20.5712890625" font-family="sans-serif" font-size="20" font-weight="normal" text-anchor="left"
+          fill="#000000">EXECUTED_WITHIN_CHANGELOG</text>
+    <rect transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-85.95209755433538 -497.75646639590445) rotate(-61.34988115030916) translate(0 -27) translate(-79.14999771118164 30)"
+          x="0" y="0" width="158.29999542236328" height="24" rx="0" ry="0" fill="white" stroke="none"></rect>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-85.95209755433538 -497.75646639590445) rotate(-61.34988115030916) translate(0 -27) translate(-79.14999771118164 30)"
+          x="48.933332443237305" y="17.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="end" fill="#000000">time:</text>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-85.95209755433538 -497.75646639590445) rotate(-61.34988115030916) translate(0 -27) translate(-79.14999771118164 30)"
+          x="54.499999046325684" y="17.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="start" fill="#000000">Timestamp</text>
+    <path transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(379.2999882075181 -246) rotate(-118.65011884969086)"
+          d="M 99 0 L 474.76212436637627 0" fill="none" stroke="#000000" stroke-width="5"></path>
+    <polygon
+            transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(379.2999882075181 -246) rotate(-118.65011884969086) translate(499.62427498412455 0) rotate(0)"
+            points="-24.8621506177483,0 -27.62461179749811,9.20820393249937 0,0 -27.62461179749811,-9.20820393249937"
+            fill="undefined" stroke="none" stroke-width="5"></polygon>
+    <rect transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(241.75208576185338 -497.75646639590445) rotate(61.34988115030913) translate(0 -27) translate(-170.01666259765625 0)"
+          x="0" y="0" width="340.0333251953125" height="30" rx="5" ry="5" fill="#ffffff" stroke="none"></rect>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(241.75208576185338 -497.75646639590445) rotate(61.34988115030913) translate(0 -27) translate(-170.01666259765625 0)"
+          x="5" y="20.5712890625" font-family="sans-serif" font-size="20" font-weight="normal" text-anchor="left"
+          fill="#000000">EXECUTED_WITHIN_CHANGELOG</text>
+    <rect transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(241.75208576185338 -497.75646639590445) rotate(61.34988115030913) translate(0 -27) translate(-79.14999771118164 30)"
+          x="0" y="0" width="158.29999542236328" height="24" rx="0" ry="0" fill="white" stroke="none"></rect>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(241.75208576185338 -497.75646639590445) rotate(61.34988115030913) translate(0 -27) translate(-79.14999771118164 30)"
+          x="48.933332443237305" y="17.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="end" fill="#000000">time:</text>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(241.75208576185338 -497.75646639590445) rotate(61.34988115030913) translate(0 -27) translate(-79.14999771118164 30)"
+          x="54.499999046325684" y="17.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="start" fill="#000000">Timestamp</text>
+    <path transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(77.89999410375901 262.03959604386296) rotate(-120.67899619535807)"
+          d="M 84 0 L 466.85452224171775 0" fill="none" stroke="#000000" stroke-width="5"></path>
+    <polygon
+            transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(77.89999410375901 262.03959604386296) rotate(-120.67899619535807) translate(491.71667285946603 0) rotate(0)"
+            points="-24.8621506177483,0 -27.62461179749811,9.20820393249937 0,0 -27.62461179749811,-9.20820393249937"
+            fill="undefined" stroke="none" stroke-width="5"></polygon>
+    <rect transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-62.63061674898512 25.16130750332917) rotate(59.32100380464193) translate(0 -27) translate(-168.3333282470703 0)"
+          x="0" y="0" width="336.6666564941406" height="30" rx="5" ry="5" fill="#ffffff" stroke="none"></rect>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-62.63061674898512 25.16130750332917) rotate(59.32100380464193) translate(0 -27) translate(-168.3333282470703 0)"
+          x="5" y="20.5712890625" font-family="sans-serif" font-size="20" font-weight="normal" text-anchor="left"
+          fill="#000000">EXECUTED_WITHIN_CHANGESET</text>
+    <rect transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-62.63061674898512 25.16130750332917) rotate(59.32100380464193) translate(0 -27) translate(-45.06666660308838 30)"
+          x="0" y="0" width="90.13333320617676" height="24" rx="0" ry="0" fill="white" stroke="none"></rect>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-62.63061674898512 25.16130750332917) rotate(59.32100380464193) translate(0 -27) translate(-45.06666660308838 30)"
+          x="57.86666679382324" y="17.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="end" fill="#000000">order:</text>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-62.63061674898512 25.16130750332917) rotate(59.32100380464193) translate(0 -27) translate(-45.06666660308838 30)"
+          x="63.43333339691162" y="17.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="start" fill="#000000">int</text>
+    <path transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(680.6999823112769 262.03959604386296) rotate(-120.67899619535804)"
+          d="M 84 0 L 466.85452224171763 0" fill="none" stroke="#000000" stroke-width="5"></path>
+    <polygon
+            transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(680.6999823112769 262.03959604386296) rotate(-120.67899619535804) translate(491.7166728594659 0) rotate(0)"
+            points="-24.8621506177483,0 -27.62461179749811,9.20820393249937 0,0 -27.62461179749811,-9.20820393249937"
+            fill="undefined" stroke="none" stroke-width="5"></polygon>
+    <rect transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(540.169371458533 25.161307503329198) rotate(59.32100380464196) translate(0 -27) translate(-168.3333282470703 0)"
+          x="0" y="0" width="336.6666564941406" height="30" rx="5" ry="5" fill="#ffffff" stroke="none"></rect>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(540.169371458533 25.161307503329198) rotate(59.32100380464196) translate(0 -27) translate(-168.3333282470703 0)"
+          x="5" y="20.5712890625" font-family="sans-serif" font-size="20" font-weight="normal" text-anchor="left"
+          fill="#000000">EXECUTED_WITHIN_CHANGESET</text>
+    <rect transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(540.169371458533 25.161307503329198) rotate(59.32100380464196) translate(0 -27) translate(-45.06666660308838 30)"
+          x="0" y="0" width="90.13333320617676" height="24" rx="0" ry="0" fill="white" stroke="none"></rect>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(540.169371458533 25.161307503329198) rotate(59.32100380464196) translate(0 -27) translate(-45.06666660308838 30)"
+          x="57.86666679382324" y="17.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="end" fill="#000000">order:</text>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(540.169371458533 25.161307503329198) rotate(59.32100380464196) translate(0 -27) translate(-45.06666660308838 30)"
+          x="63.43333339691162" y="17.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="start" fill="#000000">int</text>
+    <path transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-524.8999941037589 262.03959604386296) rotate(-59.32100380464196)"
+          d="M 84 0 L 466.85452224171775 0" fill="none" stroke="#000000" stroke-width="5"></path>
+    <polygon
+            transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-524.8999941037589 262.03959604386296) rotate(-59.32100380464196) translate(491.71667285946603 0) rotate(0)"
+            points="-24.8621506177483,0 -27.62461179749811,9.20820393249937 0,0 -27.62461179749811,-9.20820393249937"
+            fill="undefined" stroke="none" stroke-width="5"></polygon>
+    <rect transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-384.3693832510148 25.16130750332914) rotate(-59.32100380464196) translate(0 -27) translate(-168.3333282470703 0)"
+          x="0" y="0" width="336.6666564941406" height="30" rx="5" ry="5" fill="#ffffff" stroke="none"></rect>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-384.3693832510148 25.16130750332914) rotate(-59.32100380464196) translate(0 -27) translate(-168.3333282470703 0)"
+          x="5" y="20.5712890625" font-family="sans-serif" font-size="20" font-weight="normal" text-anchor="left"
+          fill="#000000">EXECUTED_WITHIN_CHANGESET</text>
+    <rect transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-384.3693832510148 25.16130750332914) rotate(-59.32100380464196) translate(0 -27) translate(-45.06666660308838 30)"
+          x="0" y="0" width="90.13333320617676" height="24" rx="0" ry="0" fill="white" stroke="none"></rect>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-384.3693832510148 25.16130750332914) rotate(-59.32100380464196) translate(0 -27) translate(-45.06666660308838 30)"
+          x="57.86666679382324" y="17.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="end" fill="#000000">order:</text>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-384.3693832510148 25.16130750332914) rotate(-59.32100380464196) translate(0 -27) translate(-45.06666660308838 30)"
+          x="63.43333339691162" y="17.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="start" fill="#000000">int</text>
+    <circle transform="translate(705.3614282916172 921.6579761533138) scale(1)" cx="77.89999410375901"
+            cy="-797.6579761533138" r="122" fill="#ffffff" stroke="#000000" strokewidth="4"></circle>
+    <rect transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(77.89999410375901 -797.6579761533138) scale(0.3356613624373735) translate(0 -37) translate(-355.5833435058594 0)"
+          x="0" y="0" width="711.1666870117188" height="74" rx="37" ry="37" fill="#ffffff" stroke="#000000"></rect>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(77.89999410375901 -797.6579761533138) scale(0.3356613624373735) translate(0 -37) translate(-355.5833435058594 0)"
+          x="37" y="53.7138671875" font-family="sans-serif" font-size="60" font-weight="normal" text-anchor="undefined"
+          fill="#000000">__LiquigraphChangelog</text>
+    <circle transform="translate(705.3614282916172 921.6579761533138) scale(1)" cx="-223.5" cy="-246" r="92"
+            fill="#ffffff" stroke="#000000" strokewidth="4"></circle>
+    <rect transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-223.5 -246) scale(0.25175769279854365) translate(0 -37) translate(-355.5666809082031 0)"
+          x="0" y="0" width="711.1333618164062" height="74" rx="37" ry="37" fill="#ffffff" stroke="#000000"></rect>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-223.5 -246) scale(0.25175769279854365) translate(0 -37) translate(-355.5666809082031 0)"
+          x="37" y="53.7138671875" font-family="sans-serif" font-size="60" font-weight="normal" text-anchor="undefined"
+          fill="#000000">__LiquigraphChangeset</text>
+    <rect transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-223.5 -246) translate(-66.46803743153546 -138.4680374315355) translate(-164.5999984741211 0)"
+          x="0" y="0" width="164.5999984741211" height="72" rx="0" ry="0" fill="white" stroke="none"></rect>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-223.5 -246) translate(-66.46803743153546 -138.4680374315355) translate(-164.5999984741211 0)"
+          x="101.19999885559082" y="17.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="end" fill="#000000">id:</text>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-223.5 -246) translate(-66.46803743153546 -138.4680374315355) translate(-164.5999984741211 0)"
+          x="106.7666654586792" y="17.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="start" fill="#000000">String</text>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-223.5 -246) translate(-66.46803743153546 -138.4680374315355) translate(-164.5999984741211 0)"
+          x="101.19999885559082" y="41.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="end" fill="#000000">author:</text>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-223.5 -246) translate(-66.46803743153546 -138.4680374315355) translate(-164.5999984741211 0)"
+          x="106.7666654586792" y="41.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="start" fill="#000000">String</text>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-223.5 -246) translate(-66.46803743153546 -138.4680374315355) translate(-164.5999984741211 0)"
+          x="101.19999885559082" y="65.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="end" fill="#000000">checksum:</text>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-223.5 -246) translate(-66.46803743153546 -138.4680374315355) translate(-164.5999984741211 0)"
+          x="106.7666654586792" y="65.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="start" fill="#000000">String</text>
+    <circle transform="translate(705.3614282916172 921.6579761533138) scale(1)" cx="379.2999882075181" cy="-246" r="92"
+            fill="#ffffff" stroke="#000000" strokewidth="4"></circle>
+    <rect transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(379.2999882075181 -246) scale(0.25175769279854365) translate(0 -37) translate(-355.5666809082031 0)"
+          x="0" y="0" width="711.1333618164062" height="74" rx="37" ry="37" fill="#ffffff" stroke="#000000"></rect>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(379.2999882075181 -246) scale(0.25175769279854365) translate(0 -37) translate(-355.5666809082031 0)"
+          x="37" y="53.7138671875" font-family="sans-serif" font-size="60" font-weight="normal" text-anchor="undefined"
+          fill="#000000">__LiquigraphChangeset</text>
+    <rect transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(379.2999882075181 -246) translate(-66.46803743153546 66.46803743153548) translate(-164.5999984741211 0)"
+          x="0" y="0" width="164.5999984741211" height="72" rx="0" ry="0" fill="white" stroke="none"></rect>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(379.2999882075181 -246) translate(-66.46803743153546 66.46803743153548) translate(-164.5999984741211 0)"
+          x="101.19999885559082" y="17.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="end" fill="#000000">id:</text>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(379.2999882075181 -246) translate(-66.46803743153546 66.46803743153548) translate(-164.5999984741211 0)"
+          x="106.7666654586792" y="17.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="start" fill="#000000">String</text>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(379.2999882075181 -246) translate(-66.46803743153546 66.46803743153548) translate(-164.5999984741211 0)"
+          x="101.19999885559082" y="41.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="end" fill="#000000">author:</text>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(379.2999882075181 -246) translate(-66.46803743153546 66.46803743153548) translate(-164.5999984741211 0)"
+          x="106.7666654586792" y="41.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="start" fill="#000000">String</text>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(379.2999882075181 -246) translate(-66.46803743153546 66.46803743153548) translate(-164.5999984741211 0)"
+          x="101.19999885559082" y="65.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="end" fill="#000000">checksum:</text>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(379.2999882075181 -246) translate(-66.46803743153546 66.46803743153548) translate(-164.5999984741211 0)"
+          x="106.7666654586792" y="65.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="start" fill="#000000">String</text>
+    <circle transform="translate(705.3614282916172 921.6579761533138) scale(1)" cx="77.89999410375901"
+            cy="262.03959604386296" r="77" fill="#ffffff" stroke="#000000" strokewidth="4"></circle>
+    <rect transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(77.89999410375901 262.03959604386296) scale(0.37705932089816685) translate(0 -27) translate(-197.06666564941406 0)"
+          x="0" y="0" width="394.1333312988281" height="54" rx="27" ry="27" fill="#ffffff" stroke="#000000"></rect>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(77.89999410375901 262.03959604386296) scale(0.37705932089816685) translate(0 -27) translate(-197.06666564941406 0)"
+          x="27" y="38.142578125" font-family="sans-serif" font-size="40" font-weight="normal" text-anchor="undefined"
+          fill="#000000">__LiquigraphQuery</text>
+    <rect transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(77.89999410375901 262.03959604386296) translate(55.86143571373726 55.86143571373725) translate(0 0)"
+          x="0" y="0" width="124.5999984741211" height="24" rx="0" ry="0" fill="white" stroke="none"></rect>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(77.89999410375901 262.03959604386296) translate(55.86143571373726 55.86143571373725) translate(0 0)"
+          x="61.19999885559082" y="17.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="end" fill="#000000">query:</text>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(77.89999410375901 262.03959604386296) translate(55.86143571373726 55.86143571373725) translate(0 0)"
+          x="66.7666654586792" y="17.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="start" fill="#000000">String</text>
+    <circle transform="translate(705.3614282916172 921.6579761533138) scale(1)" cx="680.6999823112769"
+            cy="262.03959604386296" r="77" fill="#ffffff" stroke="#000000" strokewidth="4"></circle>
+    <rect transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(680.6999823112769 262.03959604386296) scale(0.37705932089816685) translate(0 -27) translate(-197.06666564941406 0)"
+          x="0" y="0" width="394.1333312988281" height="54" rx="27" ry="27" fill="#ffffff" stroke="#000000"></rect>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(680.6999823112769 262.03959604386296) scale(0.37705932089816685) translate(0 -27) translate(-197.06666564941406 0)"
+          x="27" y="38.142578125" font-family="sans-serif" font-size="40" font-weight="normal" text-anchor="undefined"
+          fill="#000000">__LiquigraphQuery</text>
+    <rect transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(680.6999823112769 262.03959604386296) translate(55.86143571373726 55.86143571373725) translate(0 0)"
+          x="0" y="0" width="124.5999984741211" height="24" rx="0" ry="0" fill="white" stroke="none"></rect>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(680.6999823112769 262.03959604386296) translate(55.86143571373726 55.86143571373725) translate(0 0)"
+          x="61.19999885559082" y="17.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="end" fill="#000000">query:</text>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(680.6999823112769 262.03959604386296) translate(55.86143571373726 55.86143571373725) translate(0 0)"
+          x="66.7666654586792" y="17.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="start" fill="#000000">String</text>
+    <circle transform="translate(705.3614282916172 921.6579761533138) scale(1)" cx="-524.8999941037589"
+            cy="262.03959604386296" r="77" fill="#ffffff" stroke="#000000" strokewidth="4"></circle>
+    <rect transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-524.8999941037589 262.03959604386296) scale(0.37705932089816685) translate(0 -27) translate(-197.06666564941406 0)"
+          x="0" y="0" width="394.1333312988281" height="54" rx="27" ry="27" fill="#ffffff" stroke="#000000"></rect>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-524.8999941037589 262.03959604386296) scale(0.37705932089816685) translate(0 -27) translate(-197.06666564941406 0)"
+          x="27" y="38.142578125" font-family="sans-serif" font-size="40" font-weight="normal" text-anchor="undefined"
+          fill="#000000">__LiquigraphQuery</text>
+    <rect transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-524.8999941037589 262.03959604386296) translate(-55.86143571373725 55.86143571373726) translate(-124.5999984741211 0)"
+          x="0" y="0" width="124.5999984741211" height="24" rx="0" ry="0" fill="white" stroke="none"></rect>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-524.8999941037589 262.03959604386296) translate(-55.86143571373725 55.86143571373726) translate(-124.5999984741211 0)"
+          x="61.19999885559082" y="17.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="end" fill="#000000">query:</text>
+    <text xml:space="preserve"
+          transform="translate(705.3614282916172 921.6579761533138) scale(1) translate(-524.8999941037589 262.03959604386296) translate(-55.86143571373725 55.86143571373726) translate(-124.5999984741211 0)"
+          x="66.7666654586792" y="17.5712890625" font-family="sans-serif" font-size="20" font-weight="normal"
+          text-anchor="start" fill="#000000">String</text>
+</svg>

@@ -1,0 +1,26 @@
+site_name: Liquigraph
+nav:
+  - Home: index.md
+  - Download: download.md
+  - Quickstart:
+    - CLI: quickstart/cli.md
+    - Maven plugin: quickstart/maven.md
+    - Spring Boot: quickstart/spring-boot.md
+  - Reference: reference.md
+  - "[archive] 2.x manual": 2.x.md
+repo_name: 'liquigraph'
+repo_url: 'https://github.com/liquibase/liquigraph'
+theme:
+  name: material
+  icon:
+    logo: fontawesome/solid/tint
+markdown_extensions:
+  - abbr
+  - admonition
+  - markdown_include.include:
+      base_path: docs
+  - pymdownx.highlight:
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - toc:
+      permalink: ⚓
