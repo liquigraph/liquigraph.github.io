@@ -1,0 +1,1253 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.4">
+    
+    
+      
+        <title>Reference - Liquigraph</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.15aa0b43.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.75751829.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#reference" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="Liquigraph" class="md-header-nav__button md-logo" aria-label="Liquigraph">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path d="M205.22 22.09c-7.94-28.78-49.44-30.12-58.44 0C100.01 179.85 0 222.72 0 333.91 0 432.35 78.72 512 176 512s176-79.65 176-178.09c0-111.75-99.79-153.34-146.78-311.82zM176 448c-61.75 0-112-50.25-112-112 0-8.84 7.16-16 16-16s16 7.16 16 16c0 44.11 35.89 80 80 80 8.84 0 16 7.16 16 16s-7.16 16-16 16z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            Liquigraph
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Reference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/liquibase/liquigraph/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    liquigraph
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Liquigraph" class="md-nav__button md-logo" aria-label="Liquigraph">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path d="M205.22 22.09c-7.94-28.78-49.44-30.12-58.44 0C100.01 179.85 0 222.72 0 333.91 0 432.35 78.72 512 176 512s176-79.65 176-178.09c0-111.75-99.79-153.34-146.78-311.82zM176 448c-61.75 0-112-50.25-112-112 0-8.84 7.16-16 16-16s16 7.16 16 16c0 44.11 35.89 80 80 80 8.84 0 16 7.16 16 16s-7.16 16-16 16z"/></svg>
+
+    </a>
+    Liquigraph
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/liquibase/liquigraph/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    liquigraph
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="../download/" class="md-nav__link">
+      Download
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    
+    <label class="md-nav__link" for="nav-3">
+      Quickstart
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Quickstart" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Quickstart
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../quickstart/cli/" class="md-nav__link">
+      CLI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../quickstart/maven/" class="md-nav__link">
+      Maven plugin
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../quickstart/spring-boot/" class="md-nav__link">
+      Spring Boot
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Reference
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Reference
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#concepts" class="md-nav__link">
+    Concepts
+  </a>
+  
+    <nav class="md-nav" aria-label="Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#change-logs" class="md-nav__link">
+    Change logs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-sets" class="md-nav__link">
+    Change sets
+  </a>
+  
+    <nav class="md-nav" aria-label="Change sets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transactionality" class="md-nav__link">
+    Transactionality
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#immutability-and-incrementality" class="md-nav__link">
+    Immutability and incrementality
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditional-execution" class="md-nav__link">
+    Conditional execution
+  </a>
+  
+    <nav class="md-nav" aria-label="Conditional execution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#execution-contexts" class="md-nav__link">
+    Execution contexts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preconditions" class="md-nav__link">
+    Preconditions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#postconditions" class="md-nav__link">
+    Postconditions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-considerations" class="md-nav__link">
+    General considerations
+  </a>
+  
+    <nav class="md-nav" aria-label="General considerations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connection-uri" class="md-nav__link">
+    Connection URI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-tenancy-support" class="md-nav__link">
+    Multi-tenancy support
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clients" class="md-nav__link">
+    Clients
+  </a>
+  
+    <nav class="md-nav" aria-label="Clients">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cli" class="md-nav__link">
+    CLI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maven-plugin" class="md-nav__link">
+    Maven plugin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spring-boot-starter" class="md-nav__link">
+    Spring Boot starter
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="../2.x/" class="md-nav__link">
+      [archive] 2.x manual
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#concepts" class="md-nav__link">
+    Concepts
+  </a>
+  
+    <nav class="md-nav" aria-label="Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#change-logs" class="md-nav__link">
+    Change logs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-sets" class="md-nav__link">
+    Change sets
+  </a>
+  
+    <nav class="md-nav" aria-label="Change sets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transactionality" class="md-nav__link">
+    Transactionality
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#immutability-and-incrementality" class="md-nav__link">
+    Immutability and incrementality
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditional-execution" class="md-nav__link">
+    Conditional execution
+  </a>
+  
+    <nav class="md-nav" aria-label="Conditional execution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#execution-contexts" class="md-nav__link">
+    Execution contexts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preconditions" class="md-nav__link">
+    Preconditions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#postconditions" class="md-nav__link">
+    Postconditions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-considerations" class="md-nav__link">
+    General considerations
+  </a>
+  
+    <nav class="md-nav" aria-label="General considerations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connection-uri" class="md-nav__link">
+    Connection URI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-tenancy-support" class="md-nav__link">
+    Multi-tenancy support
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clients" class="md-nav__link">
+    Clients
+  </a>
+  
+    <nav class="md-nav" aria-label="Clients">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cli" class="md-nav__link">
+    CLI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maven-plugin" class="md-nav__link">
+    Maven plugin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spring-boot-starter" class="md-nav__link">
+    Spring Boot starter
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/liquibase/liquigraph/edit/master/docs/reference.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">⚓</a></h1>
+<h2 id="concepts">Concepts<a class="headerlink" href="#concepts" title="Permanent link">⚓</a></h2>
+<h3 id="change-logs">Change logs<a class="headerlink" href="#change-logs" title="Permanent link">⚓</a></h3>
+<p>A <strong>change log</strong> is a collection of <strong>change set</strong>s.</p>
+<p>Liquigraph needs to be configured with a single change log, sometimes known as main change log.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="nt">&lt;changelog</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+           <span class="na">xsi:noNamespaceSchemaLocation=</span><span class="s">&quot;https://www.liquigraph.org/schema/1.0/liquigraph.xsd&quot;</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- minimal change log --&gt;</span>
+<span class="nt">&lt;/changelog&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<p>A change log file may include other relative change log files and/or define change sets.
+Liquigraph will pre-process such inclusions and resolve them to a single change log document.</p>
+<p>The following example change log assume this folder structure:</p>
+<div class="highlight"><pre><span></span><code>.
+├── <span class="m">1</span>.0
+│   └── changelog.xml
+├── <span class="m">2</span>.0
+│   └── changelog.xml
+└── changelog.xml
+</code></pre></div>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="nt">&lt;changelog</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+           <span class="na">xsi:noNamespaceSchemaLocation=</span><span class="s">&quot;https://www.liquigraph.org/schema/1.0/liquigraph.xsd&quot;</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;import</span> <span class="na">resource=</span><span class="s">&quot;1.0/changelog.xml&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;import</span> <span class="na">resource=</span><span class="s">&quot;2.0/changelog.xml&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/changelog&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<p>In that example, the change sets of <code>1.0/changelog.xml</code> will be executed in declaration order, 
+before the ones of <code>2.0/changelog.xml</code>. </p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Contrary to Liquibase, Liquigraph does not support folder import.</p>
+</div>
+<h3 id="change-sets">Change sets<a class="headerlink" href="#change-sets" title="Permanent link">⚓</a></h3>
+<p><strong>Change set</strong>s are uniquely identified by the combination of ID and author.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>IDs must remain unique within a change log <strong>file</strong>, this is a requirement of the <abbr title="Extensible Markup Language">XML</abbr> specification.
+ID duplicates are allowed across files.</p>
+</div>
+<p>Change sets are globally ordered by their execution (transaction) timestamp.</p>
+<p>They define <strong>at least 1</strong> Cypher query.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Liquigraph only supports <abbr title="Extensible Markup Language">XML</abbr>. As a consequence, any query that includes an <abbr title="Extensible Markup Language">XML</abbr> entity (such as <code>&lt;</code> or <code>&gt;</code>) needs to
+be surrounded with <code>&lt;![CDATA[</code> and <code>]]&gt;</code> blocks.</p>
+<p>❌ <strong>Invalid</strong> change set:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">&lt;changeset</span> <span class="na">id=</span><span class="s">&quot;fix-minimum-value&quot;</span> <span class="na">author=</span><span class="s">&quot;florent.biville&quot;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;query&gt;</span>MATCH (n:SomeNode) WHERE n.value <span class="nt">&lt; 100</span> <span class="err">SET</span> <span class="na">n.value =</span> <span class="s">100&lt;/query</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/changeset&gt;</span>
+</code></pre></div>
+</td></tr></table>
+✅ <strong>Valid</strong> change set:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">&lt;changeset</span> <span class="na">id=</span><span class="s">&quot;fix-minimum-value&quot;</span> <span class="na">author=</span><span class="s">&quot;florent.biville&quot;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;query&gt;</span><span class="cp">&lt;![CDATA[MATCH (n:SomeNode) WHERE n.value &lt; 100 SET n.value = 100]]&gt;</span><span class="nt">&lt;/query&gt;</span>
+<span class="nt">&lt;/changeset&gt;</span>
+</code></pre></div>
+</td></tr></table></p>
+</div>
+<h4 id="transactionality">Transactionality<a class="headerlink" href="#transactionality" title="Permanent link">⚓</a></h4>
+<p>Each change set is bound to <strong>its own transaction</strong> (unless it defines <a href="#postconditions">postconditions</a>).</p>
+<p>If any of the queries of a given change set fails, the transaction fails, and Liquigraph execution aborts.
+A change set failure does <strong>not</strong> affect the result of the execution of the <strong>previous</strong> change sets.</p>
+<h4 id="immutability-and-incrementality">Immutability and incrementality<a class="headerlink" href="#immutability-and-incrementality" title="Permanent link">⚓</a></h4>
+<p>By default, change sets are:</p>
+<ul>
+<li>immutable: their queries are not allowed to change (Liquigraph will reject the change set)</li>
+<li>incremental: they are executed only once</li>
+</ul>
+<p>To achieve these, Liquigraph stores the history of executed change sets in the same database.</p>
+<p><img alt="History Graph Data Model" src="../assets/images/data-model.svg" /></p>
+<div align="center"><strong>Persisted History Graph Data Model</strong> <small>(powered by <a href="https://arrows.app">Arrows.app</a>)</small></div>
+
+<p>In particular, the <code>checksum</code> attribute on <code>__LiquigraphChangeset</code> nodes enables Liquigraph to detect whether a change 
+set has changed since its last execution and react accordingly.</p>
+<p>While the common migration strategy is to add up change sets, not modify existing ones, 
+you can set the <code>run-on-change</code> <abbr title="Extensible Markup Language">XML</abbr> attribute as follows to allow for change set modifications:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">&lt;changeset</span> <span class="na">id=</span><span class="s">&quot;create-sentence&quot;</span> <span class="na">author=</span><span class="s">&quot;florent.biville&quot;</span> <span class="na">run-on-change=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;query&gt;</span>CREATE (n:Sentence {text:&#39;Hello monde!&#39;})<span class="nt">&lt;/query&gt;</span>
+<span class="nt">&lt;/changeset&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This kind of change sets will only run <em>again</em> <strong>if and only if</strong> their queries change.</p>
+</div>
+<p>If you need change sets to always run, you can set the <code>run-always</code> <abbr title="Extensible Markup Language">XML</abbr> attribute as follows:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">&lt;changeset</span> <span class="na">id=</span><span class="s">&quot;maintain-node-count&quot;</span> <span class="na">author=</span><span class="s">&quot;florent.biville&quot;</span> <span class="na">run-always=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;query&gt;</span>MATCH (n) 
+          WHERE NONE(label IN LABELS(n) WHERE label STARTS WITH &#39;__Liquigraph&#39; OR label == &#39;Statistics&#39;)
+          WITH COUNT(n) AS node_total
+          MERGE (stats:Statistics) SET stats.node_total = node_total<span class="nt">&lt;/query&gt;</span>
+<span class="nt">&lt;/changeset&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Even if <code>run-always</code> is set to <code>true</code>, the change set is still <strong>not allowed</strong> to change.
+If the change set needs to be mutable, you need to set <code>run-on-change</code> as well.</p>
+</div>
+<h3 id="conditional-execution">Conditional execution<a class="headerlink" href="#conditional-execution" title="Permanent link">⚓</a></h3>
+<p>By default, every change declared from the main change log file are potential candidates for execution.</p>
+<p>As explained before, what will run depends on the persisted history graph.</p>
+<p>That being said, there are additional ways to exclude change sets from being executed, regardless of the persisted history. </p>
+<h4 id="execution-contexts">Execution contexts<a class="headerlink" href="#execution-contexts" title="Permanent link">⚓</a></h4>
+<p>Liquigraph supports execution contexts. They are simple strings, specified as a Liquigraph configuration parameter.</p>
+<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1"><abbr title="Command Line Application">CLI</abbr></label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>./liquigraph-cli.sh --execution-contexts<span class="o">=</span><span class="s2">&quot;foo,bar&quot;</span> <span class="c1"># [...] other CLI options omitted for brevity</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Maven plugin</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;configuration&gt;</span>
+    <span class="c">&lt;!-- [...]  other configuration settings omitted for brevity --&gt;</span>
+    <span class="nt">&lt;executionContexts&gt;</span>foo,bar<span class="nt">&lt;/executionContexts&gt;</span>
+<span class="nt">&lt;/configuration&gt;</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">Spring Boot starter</label><div class="tabbed-content">
+<p>Simply add this to your <code>application.properties</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="na">liquigraph.executionContexts</span><span class="o">=</span><span class="s">foo,bar</span>
+</code></pre></div>
+</div>
+</div>
+<p>On the other hand, change sets declare 0 to many execution contexts, as follows:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">&lt;changeset</span> <span class="na">id=</span><span class="s">&quot;create-sentence&quot;</span> <span class="na">author=</span><span class="s">&quot;florent.biville&quot;</span> <span class="na">contexts=</span><span class="s">&quot;foo,bar&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;query&gt;</span>CREATE (n:Sentence {text:&#39;Hello monde!&#39;})<span class="nt">&lt;/query&gt;</span>
+<span class="nt">&lt;/changeset&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<p>They will be matched under either of the following circumstances:</p>
+<ul>
+<li>Liquigraph is configured to run <strong>without</strong> any execution context</li>
+<li>The change set does not declare any execution context</li>
+<li>At least one of the execution contexts declared by the change set matches one of the configured Liquigraph execution contexts</li>
+</ul>
+<h4 id="preconditions">Preconditions<a class="headerlink" href="#preconditions" title="Permanent link">⚓</a></h4>
+<p>Change sets can optionally define preconditions. As their name suggests, these are custom checks that are run before the actual
+change set queries are executed.</p>
+<p>These custom checks are expressed as Cypher queries. The queries must return a single row, with a single column named <code>result</code>.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">&lt;changeset</span> <span class="na">id=</span><span class="s">&quot;create-sentence&quot;</span> <span class="na">author=</span><span class="s">&quot;florent.biville&quot;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;precondition&gt;</span><span class="c">&lt;!-- missing if-not-met attribute, more on that below --&gt;</span>
+      <span class="nt">&lt;query&gt;</span>RETURN true AS result<span class="nt">&lt;/query&gt;</span>
+   <span class="nt">&lt;/precondition&gt;</span>
+    <span class="nt">&lt;query&gt;</span>CREATE (n:Sentence {text:&#39;Hello monde!&#39;})<span class="nt">&lt;/query&gt;</span>
+<span class="nt">&lt;/changeset&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<p>The checks can be expressed as several Cypher queries, combined with boolean "<abbr title="Extensible Markup Language">XML</abbr> operators" (<code>&lt;and&gt;</code> and <code>&lt;or&gt;</code> are supported).</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">&lt;changeset</span> <span class="na">id=</span><span class="s">&quot;create-sentence&quot;</span> <span class="na">author=</span><span class="s">&quot;florent.biville&quot;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;precondition&gt;</span><span class="c">&lt;!-- missing if-not-met attribute, more on that below --&gt;</span>
+       <span class="nt">&lt;or&gt;</span>
+           <span class="nt">&lt;query&gt;</span>MATCH (n) RETURN COUNT(n) % 2 = 0 AS result<span class="nt">&lt;/query&gt;</span>
+           <span class="nt">&lt;and&gt;</span>
+               <span class="nt">&lt;query&gt;</span>MATCH (n:Sentence) RETURN n.text CONTAINS &#39;e&#39; AS result<span class="nt">&lt;/query&gt;</span>
+               <span class="nt">&lt;query&gt;</span>MATCH (n) RETURN COUNT(n) % 2 = 1 AS result<span class="nt">&lt;/query&gt;</span>
+           <span class="nt">&lt;/and&gt;</span>
+       <span class="nt">&lt;/or&gt;</span>
+   <span class="nt">&lt;/precondition&gt;</span>
+    <span class="nt">&lt;query&gt;</span>CREATE (n:Sentence {text:&#39;Hello monde!&#39;})<span class="nt">&lt;/query&gt;</span>
+<span class="nt">&lt;/changeset&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<p>As indicated in the snippets, the <code>if-not-met</code> attribute must be defined as well.
+This attribute defines the error handling strategy to follow when the precondition fails.
+Three strategies are currently implemented:</p>
+<ul>
+<li><code>CONTINUE</code>: ignore the precondition error, skip the corresponding change set queries execution</li>
+<li><code>MARK_AS_EXECUTED</code>: ignore the precondition error, skip the corresponding change set but persist the change set in the history graph as if it was executed</li>
+<li><code>FAIL</code>: fail the transaction, report the precondition error (Liquigraph execution stops at this point)</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;changeset</span> <span class="na">id=</span><span class="s">&quot;create-sentence&quot;</span> <span class="na">author=</span><span class="s">&quot;florent.biville&quot;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;precondition</span> <span class="na">if-not-met=</span><span class="s">&quot;MARK_AS_EXECUTED&quot;</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;or&gt;</span>
+           <span class="nt">&lt;query&gt;</span>MATCH (n) RETURN COUNT(n) % 2 = 0 AS result<span class="nt">&lt;/query&gt;</span>
+           <span class="nt">&lt;and&gt;</span>
+               <span class="nt">&lt;query&gt;</span>MATCH (n:Sentence) RETURN n.text CONTAINS &#39;e&#39; AS result<span class="nt">&lt;/query&gt;</span>
+               <span class="nt">&lt;query&gt;</span>MATCH (n) RETURN COUNT(n) % 2 = 1 AS result<span class="nt">&lt;/query&gt;</span>
+           <span class="nt">&lt;/and&gt;</span>
+       <span class="nt">&lt;/or&gt;</span>
+   <span class="nt">&lt;/precondition&gt;</span>
+    <span class="nt">&lt;query&gt;</span>CREATE (n:Sentence {text:&#39;Hello monde!&#39;})<span class="nt">&lt;/query&gt;</span>
+<span class="nt">&lt;/changeset&gt;</span>
+</code></pre></div>
+<h4 id="postconditions">Postconditions<a class="headerlink" href="#postconditions" title="Permanent link">⚓</a></h4>
+<p>Postconditions allow to run the queries of a change set by batch, until there is no more batch to execute.</p>
+<p>This can be useful if the change set queries affect many data elements in the graph. Without postconditions, such queries
+can cause memory overconsumption, or worse, crash the Neo4j server.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Change sets with postconditions do <strong>not</strong> run in a single transaction. There are instead as many transactions as
+batches to execute.
+As a consequence, if a batch execution fails, the previous batch transactions are not affected. They are committed 
+to the graph.</p>
+</div>
+<p>In the following example, the change set single query deletes relationships 1000 by 1000, until the postcondition query
+returns <code>false</code>.</p>
+<p>Like preconditions, the custom check is expressed as Cypher queries. The queries must return a single row, with a single column named <code>result</code>.
+The check can be expressed as several Cypher queries, combined with boolean "<abbr title="Extensible Markup Language">XML</abbr> operators" (<code>&lt;and&gt;</code> and <code>&lt;or&gt;</code> are supported).</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">&lt;changeset</span> <span class="na">id=</span><span class="s">&quot;delete-relationships-by-batch&quot;</span> <span class="na">author=</span><span class="s">&quot;florent.biville&quot;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;query&gt;</span>MATCH ()-[r]-&gt;() WITH r LIMIT 1000 DELETE r<span class="nt">&lt;/query&gt;</span>
+   <span class="nt">&lt;postcondition&gt;</span>
+      <span class="nt">&lt;query&gt;</span>MATCH ()-[r]-&gt;() WITH COUNT(r) AS count RETURN count = 0 AS result<span class="nt">&lt;/query&gt;</span>
+   <span class="nt">&lt;/postcondition&gt;</span>
+<span class="nt">&lt;/changeset&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">⚓</a></h2>
+<h3 id="general-considerations">General considerations<a class="headerlink" href="#general-considerations" title="Permanent link">⚓</a></h3>
+<h4 id="connection-uri">Connection <abbr title="Uniform Resource Identifier">URI</abbr><a class="headerlink" href="#connection-uri" title="Permanent link">⚓</a></h4>
+<p>Starting with version 3, Liquigraph relies on the <a href="https://github.com/neo4j-contrib/neo4j-jdbc/">official <abbr title="Java Database Connectivity">JDBC</abbr> driver for Neo4j</a>.
+As a consequence, Liquigraph expects the connection <abbr title="Uniform Resource Identifier">URI</abbr> to be specified <strong>in the <abbr title="Java Database Connectivity">JDBC</abbr> format</strong>.
+The following sections cover the <abbr title="Uniform Resource Identifier">URI</abbr> variants, depending on:</p>
+<ul>
+<li>the version of the Neo4j server</li>
+<li>the transport (<a href="https://neo4j.com/docs/http-api/current/"><abbr title="Hypertext Transfer Protocol">HTTP</abbr></a>, <a href="https://neo4j.com/docs/driver-manual/current/get-started/">Bolt</a>, embedded)</li>
+<li>if applicable, the server typology (in-cluster vs. standalone)</li>
+</ul>
+<p>You can append parameters to the connection <abbr title="Uniform Resource Identifier">URI</abbr> (such as <code>database</code>), as documented <a href="https://github.com/neo4j-contrib/neo4j-jdbc/#list-of-supported-neo4j-configuration-parameters">here</a>.</p>
+<p>Finally, the driver class name needs to be specified only when using the Spring Boot module.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<ul>
+<li>Starting with Liquigraph version 3, the embedded transport is not supported anymore.</li>
+<li>Managed services such as <a href="https://neo4j.com/cloud/aura/">Neo4j Aura</a> only support the Bolt transport.</li>
+</ul>
+</div>
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Neo4j 4.x</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Transport</th>
+<th>Typology</th>
+<th>Expected <abbr title="Uniform Resource Identifier">URI</abbr> form</th>
+<th>Driver class name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bolt</td>
+<td>standalone</td>
+<td><code>jdbc:neo4j:bolt:HOST:port</code></td>
+<td><code>org.neo4j.jdbc.bolt.BoltDriver</code></td>
+</tr>
+<tr>
+<td>Bolt</td>
+<td>in-cluster</td>
+<td><code>jdbc:neo4j:neo4j:HOST:port</code></td>
+<td><code>org.neo4j.jdbc.boltrouting.BoltRoutingNeo4jDriver</code></td>
+</tr>
+<tr>
+<td><abbr title="Hypertext Transfer Protocol">HTTP</abbr></td>
+<td>N/A</td>
+<td><code>jdbc:neo4j:http(s):HOST:port</code></td>
+<td><code>org.neo4j.jdbc.http.HttpDriver</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p><code>neo4j+s</code>, <code>neo4j+ssc</code>, <code>bolt+s</code> and <code>bolt+ssc</code> Neo4j 4.x schemes are not supported by the <abbr title="Java Database Connectivity">JDBC</abbr> driver yet
+(see filed issues <a href="https://github.com/neo4j-contrib/neo4j-jdbc/issues/248">here</a> and <a href="https://github.com/neo4j-contrib/neo4j-jdbc/issues/249">here</a>).
+In the meantime, you need to pick the corresponding
+<a href="https://github.com/neo4j-contrib/neo4j-jdbc/#list-of-supported-neo4j-configuration-parameters"><abbr title="Uniform Resource Identifier">URI</abbr> parameters</a>
+to configure the connection security and certificate trust strategy.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you want to connect to a <a href="https://neo4j.com/cloud/aura/">Neo4j Aura</a> instance, make sure to use the form <code>jdbc:neo4j:neo4j://HOST?encryption=true</code>
+(and specify <code>org.neo4j.jdbc.boltrouting.BoltRoutingNeo4jDriver</code> if you are a Spring Boot user)</p>
+</div>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Neo4j 3.x</label><div class="tabbed-content">
+<table>
+<thead>
+<tr>
+<th>Transport</th>
+<th>Typology</th>
+<th>Expected <abbr title="Uniform Resource Identifier">URI</abbr> form</th>
+<th>Driver class name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bolt</td>
+<td>standalone</td>
+<td><code>jdbc:neo4j:bolt:HOST:port</code></td>
+<td><code>org.neo4j.jdbc.bolt.BoltDriver</code></td>
+</tr>
+<tr>
+<td>Bolt</td>
+<td>in-cluster</td>
+<td><code>jdbc:neo4j:bolt+routing:HOST:port</code></td>
+<td><code>org.neo4j.jdbc.boltrouting.BoltRoutingNeo4jDriver</code></td>
+</tr>
+<tr>
+<td><abbr title="Hypertext Transfer Protocol">HTTP</abbr></td>
+<td>N/A</td>
+<td><code>jdbc:neo4j:http(s):HOST:port</code></td>
+<td><code>org.neo4j.jdbc.http.HttpDriver</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h4 id="multi-tenancy-support">Multi-tenancy support<a class="headerlink" href="#multi-tenancy-support" title="Permanent link">⚓</a></h4>
+<p><strong>Starting with 4.x</strong>, Neo4j is multi-tenant.
+Each Neo4j server may host 2 (<code>system</code> and the default <code>neo4j</code>) to many databases.</p>
+<p>The target database is configured through the connection <abbr title="Uniform Resource Identifier">URI</abbr> 
+<a href="https://github.com/neo4j-contrib/neo4j-jdbc/#list-of-supported-neo4j-configuration-parameters"><code>database</code> parameter</a>.</p>
+<p>For instance, here is a connection <abbr title="Uniform Resource Identifier">URI</abbr> that connect to Neo4j with the Bolt transport on the default port,
+and against the <code>some-database</code> database: <code>jdbc:neo4j:bolt:example.com?database=some-database</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Liquigraph always persists the history graph in the same database as the one the migrations target.
+There is currently no way to store the history graph in another database.</p>
+</div>
+<h3 id="clients">Clients<a class="headerlink" href="#clients" title="Permanent link">⚓</a></h3>
+<h4 id="cli"><abbr title="Command Line Application">CLI</abbr><a class="headerlink" href="#cli" title="Permanent link">⚓</a></h4>
+<div class="highlight"><pre><span></span><code>Usage: liquigraph <span class="o">[</span>options<span class="o">]</span> <span class="o">[</span>command<span class="o">]</span> <span class="o">[</span><span class="nb">command</span> options<span class="o">]</span>
+  Options:
+    --help, -h
+      Get this <span class="nb">help</span>
+    --version, -v
+      Show the version
+  Commands:
+    dry-run      Simulate the execution of Liquigraph migrations
+      Usage: dry-run <span class="o">[</span>options<span class="o">]</span>
+        Options:
+        * --changelog, -c
+            Master Liquigraph changelog location.
+     Prefix with <span class="s1">&#39;classpath:&#39;</span>
+            <span class="k">if</span> location is <span class="k">in</span> classpath
+          --database, -db
+            Graph DB database
+        * --dry-run-output-directory, -d, --output-directory
+            Output directory path into which changeset queries will be
+            written.
+          --execution-contexts, -x
+            Comma-separated list of Liquigraph execution contexts
+            Default: &lt;empty string&gt;
+        * --graph-db-uri, -g
+            Graph JDBC URI:
+                - jdbc:neo4j:http://host:port/
+                - jdbc:neo4j:https://host:port/
+                - jdbc:neo4j:bolt://host:port/
+          --password, -p
+            Graph DB password
+          --username, -u
+            Graph DB username
+
+    run      Execute Liquigraph migrations
+      Usage: run <span class="o">[</span>options<span class="o">]</span>
+        Options:
+        * --changelog, -c
+            Master Liquigraph changelog location.
+     Prefix with <span class="s1">&#39;classpath:&#39;</span>
+            <span class="k">if</span> location is <span class="k">in</span> classpath
+          --database, -db
+            Graph DB database
+          --execution-contexts, -x
+            Comma-separated list of Liquigraph execution contexts
+            Default: &lt;empty string&gt;
+        * --graph-db-uri, -g
+            Graph JDBC URI:
+                - jdbc:neo4j:http://host:port/
+                - jdbc:neo4j:https://host:port/
+                - jdbc:neo4j:bolt://host:port/
+          --password, -p
+            Graph DB password
+          --username, -u
+            Graph DB username
+</code></pre></div>
+<h4 id="maven-plugin">Maven plugin<a class="headerlink" href="#maven-plugin" title="Permanent link">⚓</a></h4>
+<p>Please check the reference site:</p>
+<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Neo4j 4.x</label><div class="tabbed-content">
+<p><a href="../maven-plugin-site/4.x/">Plugin site v4</a>.</p>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Neo4j 3.x</label><div class="tabbed-content">
+<p><a href="../maven-plugin-site/3.x/">Plugin site v3</a>.</p>
+</div>
+</div>
+<h4 id="spring-boot-starter">Spring Boot starter<a class="headerlink" href="#spring-boot-starter" title="Permanent link">⚓</a></h4>
+<p>Available configuration options:</p>
+<table>
+<thead>
+<tr>
+<th>Property name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default value (if any)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>liquigraph.change-log</code></td>
+<td><code>String</code></td>
+<td>Path to <a href="#change-logs">change log</a> file</td>
+<td><code>classpath:/db/liquigraph/changelog.xml</code></td>
+</tr>
+<tr>
+<td><code>liquigraph.enabled</code></td>
+<td><code>boolean</code></td>
+<td>Whether Liquigraph is enabled</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>liquigraph.execution-contexts</code></td>
+<td><code>String[]</code></td>
+<td>Liquigraph <a href="#execution-contexts">execution contexts</a></td>
+<td><code>[]</code></td>
+</tr>
+<tr>
+<td><code>liquigraph.password</code></td>
+<td><code>String</code></td>
+<td>Neo4j password</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><code>liquigraph.url</code></td>
+<td><code>String</code></td>
+<td><abbr title="Java Database Connectivity">JDBC</abbr> URL of the Neo4j server</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><code>liquigraph.user</code></td>
+<td><code>String</code></td>
+<td>Neo4j username</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../quickstart/spring-boot/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Spring Boot
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../2.x/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                [archive] 2.x manual
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.93c04032.min.js"></script>
+      <script src="../assets/javascripts/bundle.83e5331e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.8c7e0a7e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
