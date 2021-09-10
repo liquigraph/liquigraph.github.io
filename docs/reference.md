@@ -290,14 +290,10 @@ Finally, the driver class name needs to be specified only when using the Spring 
     | HTTP        | N/A        | `jdbc:neo4j:http(s):HOST:port`      | `org.neo4j.jdbc.http.HttpDriver`                    |
     
     !!! caution
-        `neo4j+s`, `neo4j+ssc`, `bolt+s` and `bolt+ssc` Neo4j 4.x schemes are not supported by the JDBC driver yet
-        (see filed issues [here](https://github.com/neo4j-contrib/neo4j-jdbc/issues/248) and [here](https://github.com/neo4j-contrib/neo4j-jdbc/issues/249)).
-        In the meantime, you need to pick the corresponding
-        [URI parameters](https://github.com/neo4j-contrib/neo4j-jdbc/#list-of-supported-neo4j-configuration-parameters)
-        to configure the connection security and certificate trust strategy.
+        `neo4j+s`, `neo4j+ssc`, `bolt+s` and `bolt+ssc` Neo4j 4.x schemes are only supported by the JDBC driver version 4.0.3 or later. Earlier 4.0.x versions will not work properly.
     
     !!! tip
-        If you want to connect to a [Neo4j Aura](https://neo4j.com/cloud/aura/) instance, make sure to use the form `jdbc:neo4j:neo4j://HOST?encryption=true`
+        If you want to connect to a [Neo4j Aura](https://neo4j.com/cloud/aura/) instance, make sure to use the form `jdbc:neo4j:neo4j+s://HOST`
         (and specify `org.neo4j.jdbc.boltrouting.BoltRoutingNeo4jDriver` if you are a Spring Boot user)
 
 === "Neo4j 3.x"
