@@ -997,15 +997,11 @@ The following sections cover the <abbr title="Uniform Resource Identifier">URI</
 </table>
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
-<p><code>neo4j+s</code>, <code>neo4j+ssc</code>, <code>bolt+s</code> and <code>bolt+ssc</code> Neo4j 4.x schemes are not supported by the <abbr title="Java Database Connectivity">JDBC</abbr> driver yet
-(see filed issues <a href="https://github.com/neo4j-contrib/neo4j-jdbc/issues/248">here</a> and <a href="https://github.com/neo4j-contrib/neo4j-jdbc/issues/249">here</a>).
-In the meantime, you need to pick the corresponding
-<a href="https://github.com/neo4j-contrib/neo4j-jdbc/#list-of-supported-neo4j-configuration-parameters"><abbr title="Uniform Resource Identifier">URI</abbr> parameters</a>
-to configure the connection security and certificate trust strategy.</p>
+<p><code>neo4j+s</code>, <code>neo4j+ssc</code>, <code>bolt+s</code> and <code>bolt+ssc</code> Neo4j 4.x schemes are only supported by the <abbr title="Java Database Connectivity">JDBC</abbr> driver version 4.0.3 or later. Earlier 4.0.x versions will not work properly.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>If you want to connect to a <a href="https://neo4j.com/cloud/aura/">Neo4j Aura</a> instance, make sure to use the form <code>jdbc:neo4j:neo4j://HOST?encryption=true</code>
+<p>If you want to connect to a <a href="https://neo4j.com/cloud/aura/">Neo4j Aura</a> instance, make sure to use the form <code>jdbc:neo4j:neo4j+s://HOST</code>
 (and specify <code>org.neo4j.jdbc.boltrouting.BoltRoutingNeo4jDriver</code> if you are a Spring Boot user)</p>
 </div>
 </div>
