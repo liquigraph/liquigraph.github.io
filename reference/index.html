@@ -953,14 +953,44 @@ The following sections cover the <abbr title="Uniform Resource Identifier">URI</
 </tr>
 <tr>
 <td>Bolt</td>
+<td>standalone</td>
+<td><code>jdbc:neo4j:bolt+s:HOST:port</code></td>
+<td><code>org.neo4j.jdbc.bolt.BoltDriver</code></td>
+</tr>
+<tr>
+<td>Bolt</td>
+<td>standalone</td>
+<td><code>jdbc:neo4j:bolt+ssc:HOST:port</code></td>
+<td><code>org.neo4j.jdbc.bolt.BoltDriver</code></td>
+</tr>
+<tr>
+<td>Bolt</td>
 <td>in-cluster</td>
 <td><code>jdbc:neo4j:neo4j:HOST:port</code></td>
 <td><code>org.neo4j.jdbc.boltrouting.BoltRoutingNeo4jDriver</code></td>
 </tr>
 <tr>
+<td>Bolt</td>
+<td>in-cluster</td>
+<td><code>jdbc:neo4j:neo4j+s:HOST:port</code></td>
+<td><code>org.neo4j.jdbc.boltrouting.BoltRoutingNeo4jDriver</code></td>
+</tr>
+<tr>
+<td>Bolt</td>
+<td>in-cluster</td>
+<td><code>jdbc:neo4j:neo4j+ssc:HOST:port</code></td>
+<td><code>org.neo4j.jdbc.boltrouting.BoltRoutingNeo4jDriver</code></td>
+</tr>
+<tr>
 <td><abbr title="Hypertext Transfer Protocol">HTTP</abbr></td>
 <td>N/A</td>
-<td><code>jdbc:neo4j:http(s):HOST:port</code></td>
+<td><code>jdbc:neo4j:http:HOST:port</code></td>
+<td><code>org.neo4j.jdbc.http.HttpDriver</code></td>
+</tr>
+<tr>
+<td><abbr title="Hypertext Transfer Protocol">HTTP</abbr></td>
+<td>N/A</td>
+<td><code>jdbc:neo4j:https:HOST:port</code></td>
 <td><code>org.neo4j.jdbc.http.HttpDriver</code></td>
 </tr>
 </tbody>
@@ -1001,7 +1031,13 @@ The following sections cover the <abbr title="Uniform Resource Identifier">URI</
 <tr>
 <td><abbr title="Hypertext Transfer Protocol">HTTP</abbr></td>
 <td>N/A</td>
-<td><code>jdbc:neo4j:http(s):HOST:port</code></td>
+<td><code>jdbc:neo4j:http:HOST:port</code></td>
+<td><code>org.neo4j.jdbc.http.HttpDriver</code></td>
+</tr>
+<tr>
+<td><abbr title="Hypertext Transfer Protocol">HTTP</abbr></td>
+<td>N/A</td>
+<td><code>jdbc:neo4j:https:HOST:port</code></td>
 <td><code>org.neo4j.jdbc.http.HttpDriver</code></td>
 </tr>
 </tbody>
