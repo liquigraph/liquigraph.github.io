@@ -286,8 +286,13 @@ Finally, the driver class name needs to be specified only when using the Spring 
     | Transport   | Typology   | Expected URI form                   | Driver class name                                   |
     | ----------- | ---------- | ----------------------------------- | --------------------------------------------------- |
     | Bolt        | standalone | `jdbc:neo4j:bolt:HOST:port`         | `org.neo4j.jdbc.bolt.BoltDriver`                    |
+    | Bolt        | standalone | `jdbc:neo4j:bolt+s:HOST:port`       | `org.neo4j.jdbc.bolt.BoltDriver`                    |
+    | Bolt        | standalone | `jdbc:neo4j:bolt+ssc:HOST:port`     | `org.neo4j.jdbc.bolt.BoltDriver`                    |
     | Bolt        | in-cluster | `jdbc:neo4j:neo4j:HOST:port`        | `org.neo4j.jdbc.boltrouting.BoltRoutingNeo4jDriver` |
-    | HTTP        | N/A        | `jdbc:neo4j:http(s):HOST:port`      | `org.neo4j.jdbc.http.HttpDriver`                    |
+    | Bolt        | in-cluster | `jdbc:neo4j:neo4j+s:HOST:port`      | `org.neo4j.jdbc.boltrouting.BoltRoutingNeo4jDriver` |
+    | Bolt        | in-cluster | `jdbc:neo4j:neo4j+ssc:HOST:port`    | `org.neo4j.jdbc.boltrouting.BoltRoutingNeo4jDriver` |
+    | HTTP        | N/A        | `jdbc:neo4j:http:HOST:port`         | `org.neo4j.jdbc.http.HttpDriver`                    |
+    | HTTP        | N/A        | `jdbc:neo4j:https:HOST:port`        | `org.neo4j.jdbc.http.HttpDriver`                    |
     
     !!! caution
         `neo4j+s`, `neo4j+ssc`, `bolt+s` and `bolt+ssc` Neo4j 4.x schemes are only supported by the JDBC driver version 4.0.3 or later. Earlier 4.0.x versions will not work properly.
@@ -302,7 +307,8 @@ Finally, the driver class name needs to be specified only when using the Spring 
     | ----------- | ---------- | ----------------------------------- | --------------------------------------------------- |
     | Bolt        | standalone | `jdbc:neo4j:bolt:HOST:port`         | `org.neo4j.jdbc.bolt.BoltDriver`                    |
     | Bolt        | in-cluster | `jdbc:neo4j:bolt+routing:HOST:port` | `org.neo4j.jdbc.boltrouting.BoltRoutingNeo4jDriver` |
-    | HTTP        | N/A        | `jdbc:neo4j:http(s):HOST:port`      | `org.neo4j.jdbc.http.HttpDriver`                    |
+    | HTTP        | N/A        | `jdbc:neo4j:http:HOST:port`         | `org.neo4j.jdbc.http.HttpDriver`                    |
+    | HTTP        | N/A        | `jdbc:neo4j:https:HOST:port`        | `org.neo4j.jdbc.http.HttpDriver`                    |
 
 #### Multi-tenancy support
 
