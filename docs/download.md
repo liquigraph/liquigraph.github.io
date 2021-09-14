@@ -14,14 +14,14 @@ brew install liquigraph
 ### Regular download (Unix & Windows)
 
 === "Liquigraph 4.x"
-    - [liquigraph-cli.zip](https://search.maven.org/remotecontent?filepath=org/liquigraph/liquigraph-cli/4.0.3/liquigraph-cli-4.0.3-bin.zip)
-    - [liquigraph-cli.tar.gz](https://search.maven.org/remotecontent?filepath=org/liquigraph/liquigraph-cli/4.0.3/liquigraph-cli-4.0.3-bin.tar.gz)
-    - [liquigraph-cli.tar.bz2](https://search.maven.org/remotecontent?filepath=org/liquigraph/liquigraph-cli/4.0.3/liquigraph-cli-4.0.3-bin.tar.bz2)
+    - [liquigraph-cli.zip](https://search.maven.org/remotecontent?filepath=org/liquigraph/liquigraph-cli/{{ versions.latest_4x }}/liquigraph-cli-{{ versions.latest_4x }}-bin.zip)
+    - [liquigraph-cli.tar.gz](https://search.maven.org/remotecontent?filepath=org/liquigraph/liquigraph-cli/{{ versions.latest_4x }}/liquigraph-cli-{{ versions.latest_4x }}-bin.tar.gz)
+    - [liquigraph-cli.tar.bz2](https://search.maven.org/remotecontent?filepath=org/liquigraph/liquigraph-cli/{{ versions.latest_4x }}/liquigraph-cli-{{ versions.latest_4x }}-bin.tar.bz2)
 
 === "Liquigraph 3.x"
-    - [liquigraph-cli.zip](https://search.maven.org/remotecontent?filepath=org/liquigraph/liquigraph-cli/3.1.2/liquigraph-cli-3.1.2-bin.zip)
-    - [liquigraph-cli.tar.gz](https://search.maven.org/remotecontent?filepath=org/liquigraph/liquigraph-cli/3.1.2/liquigraph-cli-3.1.2-bin.tar.gz)
-    - [liquigraph-cli.tar.bz2](https://search.maven.org/remotecontent?filepath=org/liquigraph/liquigraph-cli/3.1.2/liquigraph-cli-3.1.2-bin.tar.bz2)
+    - [liquigraph-cli.zip](https://search.maven.org/remotecontent?filepath=org/liquigraph/liquigraph-cli/{{ versions.latest_3x }}/liquigraph-cli-{{ versions.latest_3x }}-bin.zip)
+    - [liquigraph-cli.tar.gz](https://search.maven.org/remotecontent?filepath=org/liquigraph/liquigraph-cli/{{ versions.latest_3x }}/liquigraph-cli-{{ versions.latest_3x }}-bin.tar.gz)
+    - [liquigraph-cli.tar.bz2](https://search.maven.org/remotecontent?filepath=org/liquigraph/liquigraph-cli/{{ versions.latest_3x }}/liquigraph-cli-{{ versions.latest_3x }}-bin.tar.bz2)
 
 These archives contain two scripts:
 
@@ -59,7 +59,7 @@ The following artefacts are available through Maven Central.
     <plugin>
         <groupId>org.liquigraph</groupId>
         <artifactId>liquigraph-maven-plugin</artifactId>
-        <version>4.0.3</version>
+        <version>{{ versions.latest_4x }}</version>
         <configuration>
             <changelog>changelog.xml</changelog><!-- classpath location -->
             <jdbcUri>jdbc:neo4j:bolt://localhost</jdbcUri>
@@ -82,7 +82,7 @@ The following artefacts are available through Maven Central.
     <plugin>
         <groupId>org.liquigraph</groupId>
         <artifactId>liquigraph-maven-plugin</artifactId>
-        <version>3.1.2</version>
+        <version>{{ versions.latest_3x }}</version>
         <configuration>
             <changelog>changelog.xml</changelog><!-- classpath location -->
             <jdbcUri>jdbc:neo4j:bolt://localhost</jdbcUri>
@@ -107,7 +107,7 @@ The following artefacts are available through Maven Central.
     <dependency>
         <groupId>org.liquigraph</groupId>
         <artifactId>liquigraph-spring-boot-starter</artifactId>
-        <version>4.0.3</version>
+        <version>{{ versions.latest_4x }}</version>
     </dependency>
     ```
 
@@ -117,7 +117,7 @@ The following artefacts are available through Maven Central.
     <dependency>
         <groupId>org.liquigraph</groupId>
         <artifactId>liquigraph-spring-boot-starter</artifactId>
-        <version>3.1.2</version>
+        <version>{{ versions.latest_3x }}</version>
     </dependency>
     ```
 
@@ -133,7 +133,7 @@ The following artefacts are available through Maven Central.
     <dependency>
         <groupId>org.liquigraph</groupId>
         <artifactId>liquigraph-core</artifactId>
-        <version>4.0.3</version>
+        <version>{{ versions.latest_4x }}</version>
     </dependency>
     ```
 
@@ -143,7 +143,7 @@ The following artefacts are available through Maven Central.
     <dependency>
         <groupId>org.liquigraph</groupId>
         <artifactId>liquigraph-core</artifactId>
-        <version>3.1.2</version>
+        <version>{{ versions.latest_3x }}</version>
     </dependency>
     ```
 
