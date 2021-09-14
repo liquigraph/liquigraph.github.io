@@ -32,13 +32,13 @@ Add the following dependencies to your POM file:
     <dependency>
         <groupId>org.liquigraph</groupId>
         <artifactId>liquigraph-spring-boot-starter</artifactId>
-        <version>4.0.3</version>
+        <version>{{ versions.latest_4x }}</version>
     </dependency>
     <dependency>
         <groupId>org.neo4j</groupId>
         <!-- change this to neo4j-jdbc-http for HTTP connections to Neo4j -->
         <artifactId>neo4j-jdbc-bolt</artifactId>
-        <version>4.0.1</version>
+        <version>{{ versions.jdbc_4x }}</version>
         <scope>runtime</scope>
     </dependency>
     ```
@@ -49,13 +49,13 @@ Add the following dependencies to your POM file:
     <dependency>
         <groupId>org.liquigraph</groupId>
         <artifactId>liquigraph-spring-boot-starter</artifactId>
-        <version>3.1.2</version>
+        <version>{{ versions.latest_3x }}</version>
     </dependency>
     <dependency>
         <groupId>org.neo4j</groupId>
         <!-- change this to neo4j-jdbc-http for HTTP connections to Neo4j -->
         <artifactId>neo4j-jdbc-bolt</artifactId>
-        <version>3.5.2</version>
+        <version>{{ versions.jdbc_3x }}</version>
         <scope>runtime</scope>
     </dependency>
     ```

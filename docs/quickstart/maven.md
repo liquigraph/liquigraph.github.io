@@ -50,7 +50,7 @@ If that's not the case, simply copy the relevant sections of the following file:
                 <plugin>
                     <groupId>org.liquigraph</groupId>
                     <artifactId>liquigraph-maven-plugin</artifactId>
-                    <version>4.0.3</version>
+                    <version>{{ versions.latest_4x }}</version>
                     <configuration>
                         <changelog>changelog.xml</changelog>
                         <jdbcUri>jdbc:neo4j:bolt://localhost</jdbcUri>
@@ -89,7 +89,7 @@ If that's not the case, simply copy the relevant sections of the following file:
                 <plugin>
                     <groupId>org.liquigraph</groupId>
                     <artifactId>liquigraph-maven-plugin</artifactId>
-                    <version>3.1.2</version>
+                    <version>{{ versions.latest_3x }}</version>
                     <configuration>
                         <changelog>changelog.xml</changelog>
                         <jdbcUri>jdbc:neo4j:bolt://localhost</jdbcUri>
