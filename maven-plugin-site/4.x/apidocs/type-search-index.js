@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"org.liquigraph.maven","l":"DryRunMojo"},{"p":"org.liquigraph.maven","l":"HelpMojo"},{"p":"org.liquigraph.maven","l":"RunMojo"}]
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"org.liquigraph.maven","l":"DryRunMojo"},{"p":"org.liquigraph.maven","l":"HelpMojo"},{"p":"org.liquigraph.maven","l":"MigrateToLiquibaseMojo"},{"p":"org.liquigraph.maven","l":"ProjectAwareMojo"},{"p":"org.liquigraph.maven","l":"RunMojo"}]
