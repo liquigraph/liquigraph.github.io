@@ -2,6 +2,7 @@ site_name: Liquigraph
 nav:
   - Home: index.md
   - Download: download.md
+  - Migrate to Liquibase: migration-to-liquibase.md
   - Quickstart:
     - CLI: quickstart/cli.md
     - Maven plugin: quickstart/maven.md
@@ -14,6 +15,7 @@ theme:
   name: material
   icon:
     logo: fontawesome/solid/tint
+  custom_dir: overrides
 plugins:
   - markdownextradata: {}
 extra:

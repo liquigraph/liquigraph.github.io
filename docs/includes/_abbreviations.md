@@ -1,6 +1,7 @@
 *[CD]: Continuous Deployment
 *[CI]: Continuous Integration
 *[CLI]: Command Line Application
+*[EOL]: End Of Life
 *[HTTP]: Hypertext Transfer Protocol
 *[JAR]: Java Archive
 *[JDBC]: Java Database Connectivity
